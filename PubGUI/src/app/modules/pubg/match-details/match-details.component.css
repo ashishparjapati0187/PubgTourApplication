@@ -1,0 +1,65 @@
+.pubg-thumbnail{
+    width:350px;
+    /* first was 400px */
+    margin:10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    color: midnightblue;
+}
+.pubg-overview{
+    height: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: navy;
+}
+.pubg-image
+{
+    height: 200px;  
+    cursor: pointer;
+    /* first was 600px */
+}
+
+.pubg-overview::-webkit-scrollbar{
+    width:5px;
+    background: gray;
+}
+.pubg-actions{
+  text-align: right;
+}
+:host{
+    height: 100vh;
+}
+
+.pubg-container
+{
+    margin-top: 5%;
+    width: 80vw;
+    display: flex;
+    padding-left: 40%;
+    
+    flex-wrap: wrap;
+    flex-direction:column;
+    height:100vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    overflow-x: auto;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   padding-left: 20%;
+   margin-left: 20%;
+    margin-top: 10%;
+    width: 40%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+ 
+  .pubg-thumbnail:hover {
+    box-shadow: 0 0 11px rgba(8103,8883,8883,550); 
+  }

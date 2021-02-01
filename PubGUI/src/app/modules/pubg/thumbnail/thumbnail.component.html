@@ -1,0 +1,16 @@
+ 
+
+ <mat-card  class="pubg-thumbnail">
+    <mat-card-header>
+        <mat-card-title>Date:
+            {{tournament?.createdAt}}</mat-card-title>
+    </mat-card-header>
+    <img class="pubg-image" mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKwUJjCPV2NZqNpaKzXCUARQJL1w1ygM_LT4_7RXFrNfltqewvOw" >
+   <br><br>
+    <mat-card-actions class="pubg-actions">
+           
+         <button  mat-raised-button (click)="viewMatches(tournament.tournamentId)" class="view-Match-Button">View Matches</button> 
+         <!-- <button mat-button [routerLink]=([`/pubg/viewmatches ${tournament.tournamentId}`])>Favourite Matches</button> -->
+    </mat-card-actions>
+</mat-card>
+

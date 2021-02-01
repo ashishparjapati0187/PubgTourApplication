@@ -1,0 +1,18 @@
+<div class="pubg-container">
+<mat-card  class="pubg-thumbnail">
+    <mat-card-header>
+       
+        <mat-card-title class="header" >Match Title: {{matchDetails?.title}}</mat-card-title>
+    </mat-card-header>
+    <img class="pubg-image" mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UejaLekk0BuvzlYPLXlE6mclwnkCc715_STePUUsSp-MegmuUA" >
+    <mat-card-content class="pubg-overview">
+        Map Name: {{matchDetails?.mapName}}<br><br>
+        Match Date: {{matchDetails?.createdAt}}<br><br>
+        Total PLayers: {{matchDetails?.totalPlayers}}
+    </mat-card-content>
+    <mat-card-actions class="pubg-actions">
+         <button  mat-raised-button (click)="addToFavourite(matchDetails)" color="primary">Add to Favourite</button> 
+         <!-- <button mat-button [routerLink]=([`/pubg/viewmatches ${tournament.tournamentId}`])>Favourite Matches</button> -->
+    </mat-card-actions>
+</mat-card>
+</div>

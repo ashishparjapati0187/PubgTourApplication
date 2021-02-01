@@ -1,0 +1,44 @@
+version: '3.2'
+services:
+  user-app:
+   image: user-app
+   build: userservice/
+   restart: always
+   network_mode: host
+   ports:
+     - 8087:8087
+
+   expose:
+     - 8087
+   depends_on:
+     - pubg-mysql
+  pubg-app:
+   image: pubg-app
+   build: favouriteservice/
+   restart: always
+   network_mode: host
+   ports:
+     - 8089:8089
+   expose:
+     - 8089
+   depends_on:
+     - pubg-mysql
+
+  pubg-mysql:
+   image: mysql:5.5
+   network_mode: host
+   ports:
+     - 3306:3306
+   environment:
+     MYSQL_ROOT_PASSWORD: root
+     MYSQL_DATABASE: pubg_tour
+     MYSQL_USER: app_root
+     MYSQL_PASSWORD: root123
+ 
+  angular:
+    image: angular-app
+    build: PubGUI/
+    network_mode: host
+    container_name: angular-docker
+    ports:
+      - 4200:4200

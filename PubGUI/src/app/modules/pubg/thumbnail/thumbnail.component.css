@@ -1,0 +1,39 @@
+.pubg-thumbnail{
+    width:350px;
+    /* first was 400px */
+    background: navajowhite;
+    margin:10px;
+    box-shadow: 15px 19px 38px rgba(0,0,0,0.30), 15px 15px 12px rgba(0,0,0,0.30);
+    border-radius: 10px;
+}
+.pubg-overview{
+    height: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.pubg-image
+{
+    margin-left: 15px;
+    width: 300px;
+    height: 200px;  
+    cursor: pointer;
+    
+    /* first was 600px */
+}
+
+.pubg-overview::-webkit-scrollbar{
+    width:5px;
+    background: gray;
+}
+.pubg-actions{
+  text-align: right;
+}
+.view-Match-Button{
+    background-color:rgba(9, 44, 42, 0.679);
+    color:navajowhite;
+    font-weight: 600;
+   
+}
+.pubg-thumbnail:hover {
+    box-shadow: 0 0 11px rgba(8103,8883,8883,550); 
+  }

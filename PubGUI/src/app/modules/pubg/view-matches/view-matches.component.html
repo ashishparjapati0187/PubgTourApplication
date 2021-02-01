@@ -1,0 +1,20 @@
+
+<mat-card class="tournamentHeaderCard">
+        <h1 class="thumbnailHeader">List of Matches</h1>
+      </mat-card>
+    <div class="pubg-container">
+    <mat-card  class="pubg-thumbnail" *ngFor="let match of matches">
+    <mat-card-header>
+
+        <mat-card-title class="texts">Match Date: {{match?.createdAt}}</mat-card-title>
+    </mat-card-header>
+    <img class="pubg-image" mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPD54khfZX0g1xSRjvlDodCUlQI7JzQOro5OlmJAPce_vAXddq" >
+    <mat-card-content class="pubg-overview">
+         Match Type: {{match?.type}}
+    </mat-card-content>
+    <mat-card-actions class="pubg-actions">
+           
+         <button  mat-raised-button (click)="viewMatches(match.id)" color="primary">View details</button>
+    </mat-card-actions>
+</mat-card>
+</div>

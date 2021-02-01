@@ -1,0 +1,28 @@
+.login-block
+{
+    margin:auto;
+    width:50%;
+    padding-top: 50px;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center
+
+}
+
+.login-input-full-width
+{
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+}
+.loginHeader{
+    color:darkmagenta;
+    
+    font-family: Monospace;
+}
+
+

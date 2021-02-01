@@ -1,0 +1,8 @@
+<mat-toolbar class="navBar" color="primary">
+  <span>PubgTour App</span>
+  <button  class="tournamentButton" mat-button [routerLink]="['/pubg/tournament']">Tournaments</button>
+  <!-- <button mat-button [routerLink]="['/movies/top_rated']">Top Movies</button> -->
+  <button mat-button class="favListButton"[routerLink]="['/pubg/favouriteList']">Favourite Matches</button>
+  <button mat-button (click)="logout()">Logout</button>
+</mat-toolbar>
+<router-outlet></router-outlet>

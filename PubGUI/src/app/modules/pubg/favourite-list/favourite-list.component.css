@@ -1,0 +1,43 @@
+.pubg-thumbnail{
+    width:350px;
+    /* first was 400px */
+    margin:10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.10);
+    border-radius: 10px;
+}
+.pubg-overview{
+    height: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.pubg-image
+{
+    height: 200px;  
+    cursor: pointer;
+    /* first was 600px */
+}
+
+.pubg-overview::-webkit-scrollbar{
+    width:5px;
+    background: gray;
+}
+.pubg-actions{
+  text-align: right;
+}
+:host{
+    height: 100vh;
+}
+
+.pubg-container
+{
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    height:100vh;
+    overflow-x: auto;
+}
+.pubg-thumbnail:hover {
+    box-shadow: 0 0 11px rgba(103,83,83,5); 
+  }

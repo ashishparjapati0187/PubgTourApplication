@@ -1,0 +1,24 @@
+:host{
+    height: 100vh;
+}
+
+.pubg-container
+{
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    height:100vh;
+    overflow-x: auto;
+}
+.thumbnailHeader{
+    text-align: center;
+color: darkgreen;
+}
+.tournamentHeaderCard{
+    background-color:white;
+    margin-left: 10%;
+    width: 80%;
+    box-shadow: 10px 19px 38px rgba(10,10,10,10.60), 10px 15px 12px rgba(0,0,0,0.70);
+}

@@ -1,0 +1,15 @@
+
+<br><br>
+<mat-card class="tournamentHeaderCard">
+  <h1 class="thumbnailHeader">List of Tournaments</h1>
+</mat-card>
+
+<div class="pubg-container">
+    <pubg-thumbnail *ngFor="let tournament of tournaments" [tournament]="tournament"></pubg-thumbnail>
+    </div>
+<!-- <div *ngFor="let tour of tournaments">
+<h1>
+  {{tour| json}}
+</h1>
+</div> -->
+<!-- [useApiWatchList]='useApiWatchList' (addMovie)="addToWatchList($event)" (deleteMovie)="deleteFromWatchList($event)" -->

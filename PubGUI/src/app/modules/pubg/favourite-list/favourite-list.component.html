@@ -1,0 +1,16 @@
+<div class="pubg-container">
+<mat-card  class="pubg-thumbnail" *ngFor="let favList of allFavMatchDetails">
+  <mat-card-header>
+    
+      <mat-card-title>Date: {{favList?.createdAt}}</mat-card-title>
+  </mat-card-header>
+  <img class="pubg-image" mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UejaLekk0BuvzlYPLXlE6mclwnkCc715_STePUUsSp-MegmuUA" >
+  <mat-card-content class="pubg-overview">
+     
+  </mat-card-content>
+  <mat-card-actions class="pubg-actions">
+    <button  mat-raised-button  (click)="deleteMatch(favList)" color="primary">Delete</button>
+  </mat-card-actions>
+</mat-card>
+</div>
+
